@@ -1,0 +1,58 @@
+* {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: white;
+    margin: 0;
+}
+
+.grid-item,
+header,
+main,
+nav,
+aside,
+footer {
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+
+html,
+body {
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(min-content, 10em) auto;
+}
+
+main {
+    grid-column: 2/4;
+}
+
+nav > ul {
+    list-style-type: none;
+}
+
+img {
+    height: 50px;
+    width: 70px;
+}
+
+.mainjogsi {
+    overflow: hidden;
+}
+
+.jogsi {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mainjogsi:target .jogsi {
+    max-height: 10em;
+}
